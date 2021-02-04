@@ -16,7 +16,7 @@ function RenderCampsite({campsite}) {
     );
 } 
 
-function RenderComments({ comments }) {
+function RenderComments({comments}) {
     if (comments) {
         return (
             <div className="col-md-5 m-1">
@@ -41,7 +41,7 @@ function CampsiteInfo(props) {
             <div className="container">
                 <div className="row">
                     <RenderCampsite campsite={props.campsite} />
-                    <RenderComments comments={props.campsite.comments} />
+                    <RenderComments comments={props.comments} />
                 </div>
             </div>
         );
