@@ -71,7 +71,7 @@ class CommentForm extends Component {
         };
 
         this.toggleModal = this.toggleModal.bind(this);
-        this.handleSubmit = this.handleSubmit.bind(this);
+        this.handleSubmit = this.handleSubmit.bind(this); /*unnecessary but including*/
     }
 
     toggleModal() {
@@ -111,7 +111,6 @@ class CommentForm extends Component {
                                     className="form-control"
                                     placeholder="Your Name"
                                     validators={{
-                                        required,
                                         minLength: minLength(2),
                                         maxLength: maxLength(15)
                                     }}
@@ -122,7 +121,6 @@ class CommentForm extends Component {
                                     show="touched"
                                     component="div"
                                     messages={{
-                                        required: 'Required',
                                         minLength: 'Must be at least 2 characters',
                                         maxLength: 'Must be 15 characters or less',
                                     }}
